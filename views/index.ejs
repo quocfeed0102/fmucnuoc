@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <title>Đo mực nước</title>
+  </head>
+  <body style="background-image: url('images/797.jpg'); background-size: 100%">
+    <div
+      class="container"
+      style="
+        border: 5px solid rgba(0, 0, 0, 0.749);
+        box-sizing: border-box;
+        border-radius: 10px;
+      "
+    >
+      <div class="group1">
+        <h1 style="color: red">TRANG THÔNG TIN THEO DÕI MỰC NƯỚC</h1>
+
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div class="circle" style="margin-top:50px; padding:20px">
+            <div class="high" id="high">
+              <h2 style="text-align: center;">
+                Thời gian đo: 
+                <span id="time" style="color: rgb(100, 100, 42)">none</span>
+              </h2>
+              <h2
+                style="
+                  width: 300px;
+                  text-align: center;
+                  color: rgb(37, 14, 33);
+                "
+              >
+                MỰC NƯỚC HIỆN TẠI
+              </h2>
+              <p
+                id="mucnuoc"
+                style="
+                  color: rgb(59, 104, 11);
+                  font-size: 50px;
+                  text-align: center;
+                "
+              >
+                none
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 style="text-align: center; color:rgb(244, 198, 198)">
+          CƯỜNG ĐỘ MỰC NƯỚC TĂNG TRONG 15S:
+          <span id="sosanh" style="color: rgb(255, 251, 248); font-size:50px">none</span>
+        </h2>
+        <audio style="display: none" controls id="autoplay">
+          <source src="media/Coi-bao-thuc-trong-quan-doi-Ken.mp3" />
+        </audio>
+        <h1 id="warnning" style="color: red; display: none">
+          Mực nước tăng cao!!!
+        </h1>
+        <h1 style="color: red; display: none" id="warnning2">
+          Cường độ dòng nước tăng nhanh!!!
+        </h1>
+
+        <h2 id="warnningPro" style="text-align: center; color:red">
+          MỰC NƯỚC SẮP CHẠM VÀO THIẾT BỊ RỒII
+        </h2>
+      </div>
+
+      <script src="javascripts/script.js"></script>
+    </div>
+    <!-- <div class="copy-right">
+      <p style="display:flex">COPY-RIGHT: GROUP 9</p>
+    </div> -->
+  </body>
+</html>
